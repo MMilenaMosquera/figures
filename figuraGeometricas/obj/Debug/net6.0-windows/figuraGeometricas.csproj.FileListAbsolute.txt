@@ -1,0 +1,17 @@
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\bin\Debug\net6.0-windows\figuraGeometricas.exe
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\bin\Debug\net6.0-windows\figuraGeometricas.deps.json
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\bin\Debug\net6.0-windows\figuraGeometricas.runtimeconfig.json
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\bin\Debug\net6.0-windows\figuraGeometricas.dll
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\bin\Debug\net6.0-windows\figuraGeometricas.pdb
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.csproj.AssemblyReference.cache
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.Form1.resources
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.csproj.GenerateResource.cache
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.AssemblyInfoInputs.cache
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.AssemblyInfo.cs
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.csproj.CoreCompileInputs.cache
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.dll
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\refint\figuraGeometricas.dll
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.pdb
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\figuraGeometricas.genruntimeconfig.cache
+C:\Users\Sistema\source\repos\figuraGeometricas\figuraGeometricas\obj\Debug\net6.0-windows\ref\figuraGeometricas.dll
