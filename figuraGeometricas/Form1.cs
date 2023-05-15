@@ -3,12 +3,15 @@ using figuraGeometricas.Model;
 using Microsoft.VisualBasic.Logging;
 using Microsoft.VisualBasic;
 using System.Drawing;
+using System.Security.Policy;
+using figureGeometric.controllers;
 
 namespace figuraGeometricas
 {
     public partial class Form1 : Form
     {
         List<Ifigure> figures = new List<Ifigure>();
+        FigureController controllerFigure = new FigureController();
 
         public Form1()
         {
@@ -81,7 +84,6 @@ namespace figuraGeometricas
         {
             lblPerimeter.Text = "Perimetro: " + (figure.calculate_perimeter()) + " cm";
             lblSurface.Text = "Superficie: " + (figure.calculate_surface()) + " cm";
-            //lblCreateFigure.Text = figure.getDate();
         }
         #endregion
 
@@ -91,17 +93,17 @@ namespace figuraGeometricas
         {
             if (cmbFigure.Text == "Triangulo")
             {
-                Ifigure triangle = create_triangle();
+                Triangle triangle = controllerFigure.createTriangle(double.Parse(txtSide.Text), double.Parse(txtSide2.Text), double.Parse(txtSide3.Text));
                 add_figure(triangle);
                 lblCreateFigure.Text = "El Triangulo fue creado correctamente.";
                 Show_perimeter_and_surface(triangle);
-                //showList();
+                showList();
 
             }
 
             if (cmbFigure.Text == "Circulo")
             {
-                Ifigure circle = create_circle();
+                Ifigure circle = controllerFigure.createCircle(double.Parse(txtSide.Text));
                 add_figure(circle);
                 lblCreateFigure.Text = "El circulo fue creado correctamente.";
                 Show_perimeter_and_surface(circle);
@@ -111,56 +113,15 @@ namespace figuraGeometricas
 
             if (cmbFigure.Text == "Cuadrado")
             {
-                Ifigure square = create_square();
+                Ifigure square = controllerFigure.createSquare(double.Parse(txtSide.Text));
                 add_figure(square);
                 lblCreateFigure.Text = "El cuadrado fue creado correctamente.";
                 Show_perimeter_and_surface(square);
-                //showList();
+                showList();
             }
         }
         #endregion
 
-        #region method create
-        private Triangle create_triangle()
-        {
-            double ladoA, ladoB, ladoC;
-
-            if (double.TryParse(txtSide.Text, out ladoA) &&
-                double.TryParse(txtSide2.Text, out ladoB) &&
-                double.TryParse(txtSide3.Text, out ladoC))
-            {
-                if (valid_triangle(ladoA, ladoB, ladoC))
-
-                {
-
-                    return new Triangle(ladoA, ladoB, ladoC);
-                }
-                else
-                {
-                    MessageBox.Show("Las longitudes de los lados no forman un triángulo válido.");
-
-                    return null;
-                }
-            }
-            else
-            {
-                MessageBox.Show("Ingrese valores numéricos válidos para los lados del triángulo.");
-                return null;
-            }
-        }
-
-
-        private Circle create_circle()
-        {
-            return new Circle(Convert.ToDouble(txtSide.Text));
-        }
-        private Square create_square()
-        {
-            return new Square(Convert.ToDouble(txtSide.Text));
-        }
-
-
-        #endregion
 
         #region clear all fields
         private void Clear_all_fields()
@@ -180,27 +141,11 @@ namespace figuraGeometricas
             btnCreateFigure.Visible = false;
             btnNew.Visible = false;
             cmbFigure.Text = null;
-           
+
         }
 
         #endregion
 
-
-        #region valid triangle
-        static bool valid_triangle(double sideA, double sideB, double sideC)
-        { // Verificar que la suma de las longitudes de dos lados sea mayor que la longitud del tercer lado
-            if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-
-        #endregion
 
         #region List of figures
         private void showList()

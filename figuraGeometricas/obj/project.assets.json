@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sistema\\source\\repos\\figuraGeometricas\\figuraGeometricas\\figureGeometric.csproj",
+      "projectUniqueName": "C:\\Users\\Sistema\\Desktop\\fifif\\figuraGeometricas\\figureGeometric.csproj",
       "projectName": "figureGeometric",
-      "projectPath": "C:\\Users\\Sistema\\source\\repos\\figuraGeometricas\\figuraGeometricas\\figureGeometric.csproj",
+      "projectPath": "C:\\Users\\Sistema\\Desktop\\fifif\\figuraGeometricas\\figureGeometric.csproj",
       "packagesPath": "C:\\Users\\Sistema\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sistema\\source\\repos\\figuraGeometricas\\figuraGeometricas\\obj\\",
+      "outputPath": "C:\\Users\\Sistema\\Desktop\\fifif\\figuraGeometricas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
